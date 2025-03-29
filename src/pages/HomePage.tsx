@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import AchievementList from '../components/AchievementList';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Trophy, Users, Trending, Info } from 'lucide-react';
+import { Trophy, Users, TrendingUp, Info } from 'lucide-react';
 
 const HomePage = () => {
   const { user, status } = useAuth();
@@ -60,7 +60,7 @@ const HomePage = () => {
               
               <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-4 border">
                 <div className="flex items-center space-x-3 mb-3">
-                  <Trending className="h-5 w-5 text-achievement-primary" />
+                  <TrendingUp className="h-5 w-5 text-achievement-primary" />
                   <h3 className="font-semibold">Trending Tags</h3>
                 </div>
                 <div className="flex flex-wrap gap-2 mt-3">
@@ -125,7 +125,7 @@ const HomePage = () => {
             </div>
             
             <div className="p-6 border rounded-lg bg-white dark:bg-gray-800 shadow-sm">
-              <Trending className="h-10 w-10 text-achievement-accent mb-4" />
+              <TrendingUp className="h-10 w-10 text-achievement-accent mb-4" />
               <h3 className="text-xl font-semibold mb-2">Build Your Portfolio</h3>
               <p className="text-muted-foreground">
                 Create a showcase of your academic and extracurricular accomplishments.
